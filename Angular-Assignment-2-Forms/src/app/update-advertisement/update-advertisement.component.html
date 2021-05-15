@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <h2>Update Advertisement Form</h2>
+  <!--<div
+    *ngIf="submitted"
+    class="alert alert-success alert-dismissible fade show"
+    role="alert"
+  >
+    <strong>Successfuly added!</strong>You have successfuly added the advertise
+    <button
+      (click)="closeAlert()"
+      type="button"
+      class="close"
+      data-dismiss="alert"
+      aria-label="Close"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div> -->
+  <form [formGroup]="editAdvertisement">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="title" />
+    </div>
+
+    <br />
+
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" formControlName="name" />
+    </div>
+
+    <br />
+
+    <div class="form-group">
+      <select class="custom-select" name="category" formControlName="category">
+        <option value="">Select Category</option>
+        <option *ngFor="let i of category">{{ i }}</option>
+      </select>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+      <textarea
+        rows="5"
+        cols="80"
+        name="description"
+        formControlName="description"
+      >
+Enter details here</textarea
+      >
+    </div>
+
+    <br />
+
+    <button class="btn btn-primary" type="submit">Update Advertisement</button>
+  </form>
+</div>

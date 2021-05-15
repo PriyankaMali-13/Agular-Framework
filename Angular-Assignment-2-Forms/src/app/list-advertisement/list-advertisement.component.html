@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th scope="col">Edit/Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of listData">
+      <td>{{ a.title }}</td>
+      <td>{{ a.name }}</td>
+      <td>{{ a.category }}</td>
+      <td>{{ a.description }}</td>
+      <td>
+        <a routerLink="/update/{{a.title}}">
+        <i class="fa fa-edit" style="font-size: 24px"></i>
+        </a>
+        &nbsp; &nbsp;
+        <i class="fa fa-trash" style="font-size: 24px"></i>
+      </td>
+    </tr>
+  </tbody>
+</table>
