@@ -1,0 +1,39 @@
+{
+	"advertisment": [
+		{
+			"id": 1,
+			"title": "Cricket",
+			"name": "Bhabi",
+			"category": "Furniture",
+			"description": "Cricket bats, balls, stumps are available "
+		},
+		{
+			"title": "yolo",
+			"name": "cv",
+			"category": "Furniture",
+			"description": "vrfc",
+			"id": 2
+		},
+		{
+			"title": "Iphone",
+			"name": "Divya",
+			"category": "Mobile",
+			"description": "New iphones are available",
+			"id": 3
+		},
+		{
+			"title": "tables",
+			"name": "Frank",
+			"category": "Furniture",
+			"description": "all types of tables are avaliable",
+			"id": 4
+		},
+		{
+			"title": "Gadgets",
+			"name": "Amit",
+			"category": "Hardware",
+			"description": "Electronic gadgets avaliable",
+			"id": 5
+		}
+	]
+}
